@@ -1,0 +1,230 @@
+ /*<!--  My UX Skills section coded using CSS flex ------------------------------------------------------------------------------------------------>*/
+
+.flexContainer {
+    display: flex;
+/*}
+div.flexContainer {
+    width: 33%;*/
+}
+
+
+body {
+    background-color: #202020;
+    padding: 50px;
+ }
+
+.mySkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexContainer {
+    margin: 5px;
+    padding: 10px;
+    background-color: #202020;
+    border: 10px;
+}
+
+.flexContainer img {
+    height: 170px;
+    margin-left: -30px;
+}
+
+.flexContainer h3 {
+    margin-top: 50px;
+    margin-right: 40px;
+    font-size: 30px;
+    color: #f0f0f0;
+}
+
+/*h1 {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+    text-align: center;
+    color: #f0f0f0;
+}*/
+
+.mySkills, .myWork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway'; 
+    color: #f0f0f0;
+}
+
+.flexContainer p {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-right: 25px;
+    margin-top: 40px;
+}
+
+p {
+    font-family: 'Raleway'; 
+    font-weight: 200;
+}
+
+/* <!-- My Work Section Constructed using CSS Grid ----------------------------------------------------------------------------------------------->*/
+
+/*.workGrid {
+    display: grid; /* Convert to grid container */
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Automatic columns with minimum width of 300px */
+    /*grid-gap: 20px; /* Gap between grid items 
+}*/
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 130px;
+    grid-row-gap: 0px;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.dreamCenter {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.fIsForFood {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.myWork img {
+    max-width: 150%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    width: 350px; /* Set the width as desired */
+    height: auto; /* Let the browser calculate the height to maintain aspect ratio*/
+    border: 3px solid white;
+    border-radius: 2px;
+}
+
+.myWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    font-size: 18px;
+}
+
+/*.workGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}*/
+
+h3 {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif; 
+  }
+
+.viewAllProjects {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 24px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+.viewAll {
+    margin: 40px;
+}
+
+.projHeading {
+    padding-bottom: 50px;
+}
+
+/*.workGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}*/
+
+/*.workGrid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;      /* LIKE 
+}*/
+
+/*.workGrid img:hover {
+    filter: grayscale(100%);
+    opacity: 5;               /* LIKE
+}*/
+
+/*.workGrid img:hover {
+    transform: translateY(-5px); /* LIKE 
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+} */
+
+/*.workGrid img {
+    transition: filter 0.3s ease; /* Add transition for smoother effect 
+}
+
+.workGrid img:hover {
+    filter: brightness(0) opacity(0.5); 
+}*/
+
+/*.workGrid img {
+    position: relative;
+}*/
+
+/*.workGrid img:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity 
+}*/
+
+
+/* Media query for smaller screens 
+@media screen and (max-width: 768px) {
+    .flexContainer {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Media query for even smaller screens 
+@media screen and (max-width: 480px) {
+    .flexContainer {
+        width: 100%;
+    }
+}*/
+
+
+/* <!--Mobile Media Query -----------------------------------------------------------------------------------------------------------------------> */
+
+@media only screen and (max-width: 600) {
+    grid-template-rows: 1fr, 1fr; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "dreamCenter"
+        "fIsForFood"
+    ;
+}
+
+
